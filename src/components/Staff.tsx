@@ -35,35 +35,38 @@ const Staff = () => {
   ];
 
   return (
-    <section id="staff" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Resource Persons</h2>
-          <p className="text-lg text-muted-foreground">
+    <section id="staff" className="py-32">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto text-center mb-24">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">Resource Persons</h2>
+          <p className="text-xl text-muted-foreground font-light">
             Our expert faculty members bring decades of combined experience in materials science and engineering
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           {staffMembers.map((staff, index) => (
-            <Card key={index} className="shadow-soft hover:shadow-medium transition-smooth border-border">
-              <CardHeader className="text-center pb-4">
-                <div className="flex justify-center mb-4">
-                  <Avatar className="h-24 w-24 border-4 border-primary/10">
-                    <AvatarFallback className="bg-primary/10 text-primary text-xl font-semibold">
-                      {staff.initials}
-                    </AvatarFallback>
-                  </Avatar>
+            <Card key={index} className="glass shadow-glass hover:shadow-elevated transition-smooth border-0 group">
+              <CardHeader className="text-center pb-4 pt-8">
+                <div className="flex justify-center mb-6">
+                  <div className="relative">
+                    <div className="absolute inset-0 gradient-primary opacity-20 blur-xl rounded-full" />
+                    <Avatar className="h-28 w-28 border-4 border-primary/20 relative">
+                      <AvatarFallback className="bg-gradient-primary text-white text-2xl font-semibold">
+                        {staff.initials}
+                      </AvatarFallback>
+                    </Avatar>
+                  </div>
                 </div>
-                <CardTitle className="text-lg">{staff.name}</CardTitle>
-                <CardDescription className="font-medium text-primary">{staff.role}</CardDescription>
+                <CardTitle className="text-lg mb-1">{staff.name}</CardTitle>
+                <CardDescription className="font-medium gradient-primary bg-clip-text text-transparent">{staff.role}</CardDescription>
               </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-start space-x-2">
+              <CardContent className="space-y-4 px-6 pb-8">
+                <div className="flex items-start space-x-3">
                   <GraduationCap className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
-                  <p className="text-sm text-muted-foreground">{staff.specialization}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{staff.specialization}</p>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-primary flex-shrink-0" />
                   <a
                     href={`mailto:${staff.email}`}
@@ -77,43 +80,43 @@ const Staff = () => {
           ))}
         </div>
 
-        <div className="mt-16 max-w-2xl mx-auto bg-card rounded-xl p-8 shadow-soft border border-border">
-          <h3 className="text-xl font-semibold mb-4 text-center">Expertise Areas</h3>
-          <div className="grid md:grid-cols-2 gap-4">
-            <ul className="space-y-2 text-muted-foreground">
+        <div className="max-w-4xl mx-auto glass rounded-3xl p-12 shadow-glass">
+          <h3 className="text-3xl font-semibold mb-8 text-center">Expertise Areas</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Advanced Materials Characterization</span>
+                <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
+                <span className="leading-relaxed">Advanced Materials Characterization</span>
               </li>
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Polymer Science & Engineering</span>
+                <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
+                <span className="leading-relaxed">Polymer Science & Engineering</span>
               </li>
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Metallurgy & Metal Processing</span>
+                <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
+                <span className="leading-relaxed">Metallurgy & Metal Processing</span>
               </li>
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Ceramic Materials</span>
+                <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
+                <span className="leading-relaxed">Ceramic Materials</span>
               </li>
             </ul>
-            <ul className="space-y-2 text-muted-foreground">
+            <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Composite Materials</span>
+                <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
+                <span className="leading-relaxed">Composite Materials</span>
               </li>
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Biomaterials & Bioengineering</span>
+                <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
+                <span className="leading-relaxed">Biomaterials & Bioengineering</span>
               </li>
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Nanomaterials & Nanotechnology</span>
+                <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
+                <span className="leading-relaxed">Nanomaterials & Nanotechnology</span>
               </li>
               <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Surface Engineering & Coatings</span>
+                <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
+                <span className="leading-relaxed">Surface Engineering & Coatings</span>
               </li>
             </ul>
           </div>

@@ -2,20 +2,20 @@ import { ExternalLink } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-muted/50 border-t border-border py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+    <footer className="border-t border-border py-20">
+      <div className="container mx-auto px-6">
+        <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h3 className="font-semibold text-lg mb-4">About CMIPD</h3>
-            <p className="text-sm text-muted-foreground">
+            <h3 className="font-semibold text-xl mb-4 gradient-primary bg-clip-text text-transparent">About CMIPD</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
               Centre for Materials Innovation and Product Development at the Department of 
               Materials Science and Engineering, University of Moratuwa.
             </p>
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-semibold text-xl mb-4">Quick Links</h3>
+            <ul className="space-y-3 text-sm">
               <li>
                 <a
                   href="https://uom.lk/mat"
@@ -58,8 +58,8 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Connect</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-semibold text-xl mb-4">Connect</h3>
+            <ul className="space-y-3 text-sm">
               <li>
                 <a
                   href="mailto:cmipd@materials.mrt.ac.lk"
@@ -76,7 +76,7 @@ const Footer = () => {
                   +94 11 265 0301
                 </a>
               </li>
-              <li className="text-muted-foreground pt-2">
+              <li className="text-muted-foreground pt-2 leading-relaxed">
                 University of Moratuwa<br />
                 Katubedda, Moratuwa 10400<br />
                 Sri Lanka

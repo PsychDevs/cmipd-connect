@@ -28,90 +28,92 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-          <p className="text-lg text-muted-foreground">
-            Comprehensive materials science and engineering solutions tailored to industry needs
+    <section id="services" className="py-32 gradient-subtle">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto text-center mb-24">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">Our Services</h2>
+          <p className="text-xl text-muted-foreground font-light">
+            Comprehensive materials science solutions tailored to industry needs
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          <Card className="overflow-hidden shadow-medium border-border">
-            <div className="relative h-64">
+        <div className="grid lg:grid-cols-2 gap-8 mb-16 max-w-6xl mx-auto">
+          <Card className="overflow-hidden glass shadow-glass hover:shadow-elevated transition-smooth border-0">
+            <div className="relative h-72 overflow-hidden">
+              <div className="absolute inset-0 gradient-primary opacity-10" />
               <img
                 src={consultancyImage}
                 alt="Consultancy Services"
                 className="w-full h-full object-cover"
               />
             </div>
-            <CardHeader>
-              <CardTitle className="text-2xl">Consultancy Services</CardTitle>
-              <CardDescription className="text-base">
+            <CardHeader className="p-8">
+              <CardTitle className="text-3xl mb-2">Consultancy Services</CardTitle>
+              <CardDescription className="text-lg">
                 Expert advisory services for materials-related challenges
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-3">
-              <p className="text-muted-foreground">
+            <CardContent className="px-8 pb-8 space-y-4">
+              <p className="text-muted-foreground leading-relaxed">
                 Our experienced faculty members provide specialized consultancy services to address 
                 complex materials science and engineering challenges faced by industries.
               </p>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Materials selection and optimization</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Failure analysis and troubleshooting</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Process development and improvement</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Quality control and assurance</span>
                 </li>
               </ul>
             </CardContent>
           </Card>
 
-          <Card className="overflow-hidden shadow-medium border-border">
-            <div className="relative h-64">
+          <Card className="overflow-hidden glass shadow-glass hover:shadow-elevated transition-smooth border-0">
+            <div className="relative h-72 overflow-hidden">
+              <div className="absolute inset-0 gradient-primary opacity-10" />
               <img
                 src={researchImage}
                 alt="Research & Development"
                 className="w-full h-full object-cover"
               />
             </div>
-            <CardHeader>
-              <CardTitle className="text-2xl">Research & Development</CardTitle>
-              <CardDescription className="text-base">
+            <CardHeader className="p-8">
+              <CardTitle className="text-3xl mb-2">Research & Development</CardTitle>
+              <CardDescription className="text-lg">
                 Cutting-edge research facilities for materials innovation
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-3">
-              <p className="text-muted-foreground">
+            <CardContent className="px-8 pb-8 space-y-4">
+              <p className="text-muted-foreground leading-relaxed">
                 Access world-class research facilities and collaborate with our expert team to develop 
                 innovative materials solutions for your specific applications.
               </p>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Novel materials development</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Advanced characterization techniques</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Prototype testing and validation</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Collaborative research projects</span>
                 </li>
               </ul>
@@ -119,19 +121,19 @@ const Services = () => {
           </Card>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="text-center shadow-soft hover:shadow-medium transition-smooth border-border">
-                <CardHeader>
-                  <div className="mx-auto bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4">
-                    <Icon className="h-8 w-8 text-primary" />
+              <Card key={index} className="text-center glass shadow-glass hover:shadow-elevated transition-smooth border-0 group">
+                <CardHeader className="p-6">
+                  <div className="mx-auto gradient-primary rounded-2xl p-4 w-16 h-16 flex items-center justify-center mb-4 glow-primary group-hover:scale-110 transition-smooth">
+                    <Icon className="h-8 w-8 text-white" />
                   </div>
                   <CardTitle className="text-lg">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">{service.description}</p>
+                <CardContent className="px-6 pb-6">
+                  <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
             );

@@ -9,48 +9,48 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
-          <p className="text-lg text-muted-foreground">
+    <section id="contact" className="py-32 gradient-subtle">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto text-center mb-24">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">Get in Touch</h2>
+          <p className="text-xl text-muted-foreground font-light">
             Ready to collaborate? Request a consultation or reach out to us directly
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <Card className="shadow-medium border-border">
-            <CardHeader>
-              <CardTitle className="text-2xl">Request Consultation</CardTitle>
-              <CardDescription>
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <Card className="glass shadow-glass border-0">
+            <CardHeader className="p-8">
+              <CardTitle className="text-3xl mb-2">Request Consultation</CardTitle>
+              <CardDescription className="text-lg">
                 Fill out our consultation form and we'll get back to you within 24-48 hours
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-muted-foreground">
+            <CardContent className="px-8 pb-8 space-y-6">
+              <p className="text-muted-foreground leading-relaxed">
                 Our consultation request form allows you to:
               </p>
-              <ul className="space-y-2 text-muted-foreground">
+              <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Describe your materials science challenge or project</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Specify the type of expertise you need</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Request specific faculty members or service areas</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
+                  <span className="gradient-primary bg-clip-text text-transparent mr-3 font-bold">•</span>
                   <span>Schedule an initial consultation meeting</span>
                 </li>
               </ul>
               <Button 
                 onClick={openConsultationForm} 
-                className="w-full group"
+                className="w-full group glow-primary"
                 size="lg"
               >
                 Open Consultation Form
@@ -59,20 +59,22 @@ const Contact = () => {
             </CardContent>
           </Card>
 
-          <Card className="shadow-medium border-border">
-            <CardHeader>
-              <CardTitle className="text-2xl">Contact Information</CardTitle>
-              <CardDescription>
+          <Card className="glass shadow-glass border-0">
+            <CardHeader className="p-8">
+              <CardTitle className="text-3xl mb-2">Contact Information</CardTitle>
+              <CardDescription className="text-lg">
                 Reach out to us directly through any of these channels
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+            <CardContent className="px-8 pb-8 space-y-8">
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="gradient-primary rounded-xl p-3 mt-1">
+                    <MapPin className="h-5 w-5 text-white" />
+                  </div>
                   <div>
-                    <p className="font-medium">Address</p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="font-semibold mb-1">Address</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       Department of Materials Science and Engineering<br />
                       Faculty of Engineering<br />
                       University of Moratuwa<br />
@@ -82,10 +84,12 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-3">
-                  <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                <div className="flex items-start space-x-4">
+                  <div className="gradient-primary rounded-xl p-3 mt-1">
+                    <Phone className="h-5 w-5 text-white" />
+                  </div>
                   <div>
-                    <p className="font-medium">Phone</p>
+                    <p className="font-semibold mb-1">Phone</p>
                     <a
                       href="tel:+94112650301"
                       className="text-sm text-primary hover:underline"
@@ -95,10 +99,12 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-3">
-                  <Mail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                <div className="flex items-start space-x-4">
+                  <div className="gradient-primary rounded-xl p-3 mt-1">
+                    <Mail className="h-5 w-5 text-white" />
+                  </div>
                   <div>
-                    <p className="font-medium">Email</p>
+                    <p className="font-semibold mb-1">Email</p>
                     <a
                       href="mailto:cmipd@materials.mrt.ac.lk"
                       className="text-sm text-primary hover:underline"
@@ -109,9 +115,9 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-border">
-                <p className="text-sm font-medium mb-2">Office Hours</p>
-                <p className="text-sm text-muted-foreground">
+              <div className="pt-6 border-t border-border">
+                <p className="font-semibold mb-2">Office Hours</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   Monday - Friday: 8:00 AM - 4:00 PM<br />
                   Saturday - Sunday: Closed
                 </p>
