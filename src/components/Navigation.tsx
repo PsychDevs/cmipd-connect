@@ -14,33 +14,33 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 glass shadow-glass">
-      <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
-          <div className="flex items-center space-x-3">
+    <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center space-x-2">
             <div className="flex flex-col">
-              <span className="text-xl font-bold gradient-primary bg-clip-text text-transparent">CMIPD</span>
-              <span className="text-xs text-muted-foreground hidden sm:block font-light">
+              <span className="text-lg font-bold text-primary">CMIPD</span>
+              <span className="text-xs text-muted-foreground hidden sm:block">
                 University of Moratuwa
               </span>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-2">
-            <Button variant="ghost" onClick={() => scrollToSection("home")} className="text-base">
+          <div className="hidden md:flex items-center space-x-1">
+            <Button variant="ghost" onClick={() => scrollToSection("home")}>
               Home
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("about")} className="text-base">
+            <Button variant="ghost" onClick={() => scrollToSection("about")}>
               About
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("services")} className="text-base">
+            <Button variant="ghost" onClick={() => scrollToSection("services")}>
               Services
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection("staff")} className="text-base">
+            <Button variant="ghost" onClick={() => scrollToSection("staff")}>
               Resource Persons
             </Button>
-            <Button variant="default" onClick={() => scrollToSection("contact")} className="ml-4">
+            <Button variant="default" onClick={() => scrollToSection("contact")} className="ml-2">
               Request Consultation
             </Button>
           </div>
@@ -56,31 +56,31 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden pb-6 space-y-2 animate-fade-in">
+          <div className="md:hidden pb-4 space-y-2 animate-fade-in">
             <Button
               variant="ghost"
-              className="w-full justify-start text-base"
+              className="w-full justify-start"
               onClick={() => scrollToSection("home")}
             >
               Home
             </Button>
             <Button
               variant="ghost"
-              className="w-full justify-start text-base"
+              className="w-full justify-start"
               onClick={() => scrollToSection("about")}
             >
               About
             </Button>
             <Button
               variant="ghost"
-              className="w-full justify-start text-base"
+              className="w-full justify-start"
               onClick={() => scrollToSection("services")}
             >
               Services
             </Button>
             <Button
               variant="ghost"
-              className="w-full justify-start text-base"
+              className="w-full justify-start"
               onClick={() => scrollToSection("staff")}
             >
               Resource Persons
