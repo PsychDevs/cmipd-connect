@@ -1,126 +1,127 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Mail, GraduationCap } from "lucide-react";
+import { Mail, GraduationCap, Microscope, Layers, Hammer, Package, Dna, Sparkles, Atom, Zap } from "lucide-react";
 
 const Staff = () => {
-  const staffMembers = [
-    {
-      name: "Prof. Senior Faculty Member",
-      role: "Materials Characterization",
-      specialization: "Advanced Materials, Nanotechnology",
-      email: "faculty1@materials.mrt.ac.lk",
-      initials: "SF",
-    },
-    {
-      name: "Dr. Research Lead",
-      role: "Composite Materials",
-      specialization: "Polymer Composites, Manufacturing",
-      email: "faculty2@materials.mrt.ac.lk",
-      initials: "RL",
-    },
-    {
-      name: "Dr. Technical Expert",
-      role: "Metallurgy & Alloys",
-      specialization: "Metal Processing, Corrosion",
-      email: "faculty3@materials.mrt.ac.lk",
-      initials: "TE",
-    },
-    {
-      name: "Dr. Innovation Director",
-      role: "Biomaterials",
-      specialization: "Biomedical Applications, Tissue Engineering",
-      email: "faculty4@materials.mrt.ac.lk",
-      initials: "ID",
-    },
-  ];
+	const staffMembers = [
+		{
+			name: "Prof. Senior Faculty Member",
+			role: "Materials Characterization",
+			specialization: "Advanced Materials, Nanotechnology",
+			email: "faculty1@materials.mrt.ac.lk",
+			initials: "SF",
+		},
+		{
+			name: "Dr. Research Lead",
+			role: "Composite Materials",
+			specialization: "Polymer Composites, Manufacturing",
+			email: "faculty2@materials.mrt.ac.lk",
+			initials: "RL",
+		},
+		{
+			name: "Dr. Technical Expert",
+			role: "Metallurgy & Alloys",
+			specialization: "Metal Processing, Corrosion",
+			email: "faculty3@materials.mrt.ac.lk",
+			initials: "TE",
+		},
+		{
+			name: "Dr. Innovation Director",
+			role: "Biomaterials",
+			specialization: "Biomedical Applications, Tissue Engineering",
+			email: "faculty4@materials.mrt.ac.lk",
+			initials: "ID",
+		},
+	];
 
-  return (
-    <section id="staff" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Resource Persons</h2>
-          <p className="text-lg text-muted-foreground">
-            Our expert faculty members bring decades of combined experience in materials science and engineering
-          </p>
-        </div>
+	return (
+		<section id="staff" className="py-24 bg-muted/30">
+			<div className="container mx-auto px-4">
+				<div className="max-w-3xl mx-auto text-center mb-16">
+					<h2 className="text-3xl md:text-4xl font-bold mb-4">Resource Persons</h2>
+					<p className="text-lg text-muted-foreground">
+						Our expert faculty members bring decades of combined experience in materials science and engineering
+					</p>
+				</div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {staffMembers.map((staff, index) => (
-            <Card key={index} className="shadow-soft hover:shadow-medium transition-smooth border-border">
-              <CardHeader className="text-center pb-4">
-                <div className="flex justify-center mb-4">
-                  <Avatar className="h-24 w-24 border-4 border-primary/10">
-                    <AvatarFallback className="bg-primary/10 text-primary text-xl font-semibold">
-                      {staff.initials}
-                    </AvatarFallback>
-                  </Avatar>
-                </div>
-                <CardTitle className="text-lg">{staff.name}</CardTitle>
-                <CardDescription className="font-medium text-primary">{staff.role}</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-start space-x-2">
-                  <GraduationCap className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
-                  <p className="text-sm text-muted-foreground">{staff.specialization}</p>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Mail className="h-4 w-4 text-primary flex-shrink-0" />
-                  <a
-                    href={`mailto:${staff.email}`}
-                    className="text-sm text-primary hover:underline break-all"
-                  >
-                    {staff.email}
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+					{staffMembers.map((staff, index) => (
+						<Card key={index} className="shadow-soft hover:shadow-medium transition-smooth border-border">
+							<CardHeader className="text-center pb-4">
+								<div className="flex justify-center mb-4">
+									<Avatar className="h-24 w-24 border-4 border-primary/10">
+										<AvatarFallback className="bg-primary/10 text-primary text-xl font-semibold">
+											{staff.initials}
+										</AvatarFallback>
+									</Avatar>
+								</div>
+								<CardTitle className="text-lg">{staff.name}</CardTitle>
+								<CardDescription className="font-medium text-primary">{staff.role}</CardDescription>
+							</CardHeader>
+							<CardContent className="space-y-3">
+								<div className="flex items-start space-x-2">
+									<GraduationCap className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+									<p className="text-sm text-muted-foreground">{staff.specialization}</p>
+								</div>
+								<div className="flex items-center space-x-2">
+									<Mail className="h-4 w-4 text-primary flex-shrink-0" />
+									<a href={`mailto:${staff.email}`} className="text-sm text-primary hover:underline break-all">
+										{staff.email}
+									</a>
+								</div>
+							</CardContent>
+						</Card>
+					))}
+				</div>
 
-        <div className="mt-16 max-w-2xl mx-auto bg-card rounded-xl p-8 shadow-soft border border-border">
-          <h3 className="text-xl font-semibold mb-4 text-center">Expertise Areas</h3>
-          <div className="grid md:grid-cols-2 gap-4">
-            <ul className="space-y-2 text-muted-foreground">
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Advanced Materials Characterization</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Polymer Science & Engineering</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Metallurgy & Metal Processing</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Ceramic Materials</span>
-              </li>
-            </ul>
-            <ul className="space-y-2 text-muted-foreground">
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Composite Materials</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Biomaterials & Bioengineering</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Nanomaterials & Nanotechnology</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2">•</span>
-                <span>Surface Engineering & Coatings</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+				<div className="mt-16 max-w-5xl mx-auto">
+					<div className="text-center mb-10">
+						<h3 className="text-3xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+							Expertise Areas
+						</h3>
+						<p className="text-muted-foreground max-w-2xl mx-auto">
+							Comprehensive materials science capabilities spanning multiple disciplines
+						</p>
+					</div>
+
+					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+						{[
+							{ icon: Microscope, title: "Advanced Materials Characterization", gradient: "from-blue-500 to-cyan-500" },
+							{ icon: Layers, title: "Polymer Science & Engineering", gradient: "from-purple-500 to-pink-500" },
+							{ icon: Hammer, title: "Metallurgy & Metal Processing", gradient: "from-orange-500 to-red-500" },
+							{ icon: Package, title: "Ceramic Materials", gradient: "from-amber-500 to-yellow-500" },
+							{ icon: Layers, title: "Composite Materials", gradient: "from-green-500 to-emerald-500" },
+							{ icon: Dna, title: "Biomaterials & Bioengineering", gradient: "from-teal-500 to-cyan-500" },
+							{ icon: Atom, title: "Nanomaterials & Nanotechnology", gradient: "from-indigo-500 to-purple-500" },
+							{ icon: Sparkles, title: "Surface Engineering & Coatings", gradient: "from-pink-500 to-rose-500" },
+						].map((area, index) => {
+							const Icon = area.icon;
+							return (
+								<Card
+									key={index}
+									className="group relative overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-border bg-card/50 backdrop-blur"
+								>
+									<CardContent className="p-6 flex flex-col items-center text-center">
+										<div
+											className={`inline-flex p-3 rounded-lg bg-gradient-to-br ${area.gradient} mb-4 shadow-md group-hover:scale-110 transition-transform duration-300`}
+										>
+											<Icon className="h-6 w-6 text-white" />
+										</div>
+										<h4 className="font-semibold text-sm leading-snug group-hover:text-primary transition-colors">
+											{area.title}
+										</h4>
+									</CardContent>
+									<div
+										className={`absolute inset-0 bg-gradient-to-br ${area.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
+									/>
+								</Card>
+							);
+						})}
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default Staff;
