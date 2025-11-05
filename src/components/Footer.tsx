@@ -39,11 +39,6 @@ const Footer = () => {
 								</a>
 							</li>
 							<li>
-								<a href="#staff" className="text-muted-foreground hover:text-primary transition-smooth">
-									Resource Persons
-								</a>
-							</li>
-							<li>
 								<a href="#services" className="text-muted-foreground hover:text-primary transition-smooth">
 									Our Services
 								</a>
@@ -56,10 +51,10 @@ const Footer = () => {
 						<ul className="space-y-2 text-sm">
 							<li>
 								<a
-									href="mailto:cmipd@materials.mrt.ac.lk"
+									href="mailto:director-cmipd@uom.lk"
 									className="text-muted-foreground hover:text-primary transition-smooth"
 								>
-									cmipd@materials.mrt.ac.lk
+									director-cmipd@uom.lk
 								</a>
 							</li>
 							<li>
