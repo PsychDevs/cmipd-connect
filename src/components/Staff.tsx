@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Mail, GraduationCap, Microscope, Layers, Hammer, Package, Dna, Sparkles, Atom, Zap } from "lucide-react";
+import { Mail, GraduationCap, Microscope, Layers, Hammer, Amphora, Dna, Computer, Atom, Dribbble } from "lucide-react";
 
 const Staff = () => {
 	const staffMembers = [
@@ -87,13 +87,17 @@ const Staff = () => {
 					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
 						{[
 							{ icon: Microscope, title: "Advanced Materials Characterization", gradient: "from-blue-500 to-cyan-500" },
-							{ icon: Layers, title: "Polymer Science & Engineering", gradient: "from-purple-500 to-pink-500" },
+							{ icon: Dribbble, title: "Polymer Science & Engineering", gradient: "from-purple-500 to-pink-500" },
 							{ icon: Hammer, title: "Metallurgy & Metal Processing", gradient: "from-orange-500 to-red-500" },
-							{ icon: Package, title: "Ceramic Materials", gradient: "from-amber-500 to-yellow-500" },
+							{ icon: Amphora, title: "Ceramic Materials", gradient: "from-amber-500 to-yellow-500" },
 							{ icon: Layers, title: "Composite Materials", gradient: "from-green-500 to-emerald-500" },
 							{ icon: Dna, title: "Biomaterials & Bioengineering", gradient: "from-teal-500 to-cyan-500" },
 							{ icon: Atom, title: "Nanomaterials & Nanotechnology", gradient: "from-indigo-500 to-purple-500" },
-							{ icon: Sparkles, title: "Surface Engineering & Coatings", gradient: "from-pink-500 to-rose-500" },
+							{
+								icon: Computer,
+								title: "Multiphysics Simulations and Finite Element Analysis",
+								gradient: "from-pink-500 to-rose-500",
+							},
 						].map((area, index) => {
 							const Icon = area.icon;
 							return (
