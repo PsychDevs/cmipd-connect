@@ -37,53 +37,13 @@ const Staff = () => {
 	return (
 		<section id="staff" className="py-24 bg-muted/30">
 			<div className="container mx-auto px-4">
-				<div className="max-w-3xl mx-auto text-center mb-16">
-					<h2 className="text-3xl md:text-4xl font-bold mb-4">Resource Persons</h2>
-					<p className="text-lg text-muted-foreground">
-						Our expert faculty members bring decades of combined experience in materials science and engineering
-					</p>
-				</div>
-
-				<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-					{staffMembers.map((staff, index) => (
-						<Card key={index} className="shadow-soft hover:shadow-medium transition-smooth border-border">
-							<CardHeader className="text-center pb-4">
-								<div className="flex justify-center mb-4">
-									<Avatar className="h-24 w-24 border-4 border-primary/10">
-										<AvatarFallback className="bg-primary/10 text-primary text-xl font-semibold">
-											{staff.initials}
-										</AvatarFallback>
-									</Avatar>
-								</div>
-								<CardTitle className="text-lg">{staff.name}</CardTitle>
-								<CardDescription className="font-medium text-primary">{staff.role}</CardDescription>
-							</CardHeader>
-							<CardContent className="space-y-3">
-								<div className="flex items-start space-x-2">
-									<GraduationCap className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
-									<p className="text-sm text-muted-foreground">{staff.specialization}</p>
-								</div>
-								<div className="flex items-center space-x-2">
-									<Mail className="h-4 w-4 text-primary flex-shrink-0" />
-									<a href={`mailto:${staff.email}`} className="text-sm text-primary hover:underline break-all">
-										{staff.email}
-									</a>
-								</div>
-							</CardContent>
-						</Card>
-					))}
-				</div>
-
 				<div className="mt-16 max-w-5xl mx-auto">
-					<div className="text-center mb-10">
-						<h3 className="text-3xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-							Expertise Areas
-						</h3>
-						<p className="text-muted-foreground max-w-2xl mx-auto">
+					<div className="max-w-3xl mx-auto text-center mb-16">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4">Expertise Areas</h2>
+						<p className="text-lg text-muted-foreground">
 							Comprehensive materials science capabilities spanning multiple disciplines
 						</p>
 					</div>
-
 					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
 						{[
 							{ icon: Microscope, title: "Advanced Materials Characterization", gradient: "from-blue-500 to-cyan-500" },
