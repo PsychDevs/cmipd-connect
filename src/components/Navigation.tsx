@@ -27,9 +27,6 @@ const Navigation = () => {
 
 					{/* Desktop Navigation */}
 					<div className="hidden md:flex items-center space-x-1">
-						<Button variant="ghost" onClick={() => scrollToSection("home")}>
-							Home
-						</Button>
 						<Button variant="ghost" onClick={() => scrollToSection("about")}>
 							About
 						</Button>
@@ -37,7 +34,7 @@ const Navigation = () => {
 							Services
 						</Button>
 						<Button variant="ghost" onClick={() => scrollToSection("staff")}>
-							Resource Persons
+							Expertise
 						</Button>
 						<Button variant="default" onClick={() => scrollToSection("contact")} className="ml-2">
 							Request Consultation

@@ -26,7 +26,7 @@ const Hero = () => {
 
 					<p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
 						Bridging the gap between industry and academia through cutting-edge materials research, innovation, and expert
-						consultancy services.
+						consultancy services
 					</p>
 
 					<div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
