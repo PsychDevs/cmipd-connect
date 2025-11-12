@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const Contact = () => {
 	const openConsultationForm = () => {
-		// Replace with actual Google Form URL when available
+		// Google Form URL
 		window.open("https://forms.gle/1WMYVHAy8z4YKh998", "_blank");
 	};
 

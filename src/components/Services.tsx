@@ -1,7 +1,7 @@
 import { Microscope, BookOpen, Users, Zap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import consultancyImage from "@/assets/consultancy.jpg";
-import researchImage from "@/assets/research.jpg";
+import researchImage from "@/assets/Students.png";
+import consultancyImage from "@/assets/Consultancy.png";
 
 const Services = () => {
   const services = [
@@ -39,7 +39,7 @@ const Services = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <Card className="overflow-hidden shadow-medium border-border">
-            <div className="relative h-64">
+            <div className="relative h-80">
               <img
                 src={consultancyImage}
                 alt="Consultancy Services"
@@ -79,7 +79,7 @@ const Services = () => {
           </Card>
 
           <Card className="overflow-hidden shadow-medium border-border">
-            <div className="relative h-64">
+            <div className="relative h-80">
               <img
                 src={researchImage}
                 alt="Research & Development"

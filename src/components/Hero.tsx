@@ -3,28 +3,31 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselApi, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import collaborationImage from "@/assets/collaboration.jpg";
-import consultancyImage from "@/assets/consultancy.jpg";
-import researchImage from "@/assets/research.jpg";
+import consultancyImage from "@/assets/Consultancy.png";
+import researchImage from "@/assets/Students.png";
+import discussionImage from "@/assets/discussion.png";
+import metallurgyImage from "@/assets/metallurgyDisplay.png";
+import teachingImage from "@/assets/teaching.png";
+import equipmentImage from "@/assets/equipmentElectric.png";
+import microscopyImage from "@/assets/microscopeView.png";
 import { cn } from "@/lib/utils";
 
 const slides = [
 	{
 		id: "advanced-materials",
 		image: researchImage,
-		title: "Advanced Materials Research",
-		description: "Characterisation, testing, and modelling of cutting-edge materials for industrial applications.",
+	},
+	{
+		id: "knowledge-sharing",
+		image: consultancyImage,
 	},
 	{
 		id: "product-development",
-		image: consultancyImage,
-		title: "Product Development",
-		description: "Concept-to-market support for innovative products and manufacturing processes.",
+		image: equipmentImage,
 	},
 	{
-		id: "industry-collaboration",
-		image: collaborationImage,
-		title: "Industry Collaboration",
-		description: "Partnership programmes connecting academic expertise with real-world industrial challenges.",
+		id: "domain-expertise",
+		image: metallurgyImage,
 	},
 ];
 
@@ -109,9 +112,6 @@ const Hero = () => {
 									<CarouselItem key={slide.id}>
 										<div className="relative overflow-hidden rounded-3xl border bg-background shadow-medium">
 											<img src={slide.image} alt={slide.title} className="h-[22rem] w-full object-cover" />
-											<div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/90 via-background/70 to-transparent p-6">
-												<h3 className="text-2xl font-semibold text-foreground">{slide.title}</h3>
-											</div>
 										</div>
 									</CarouselItem>
 								))}

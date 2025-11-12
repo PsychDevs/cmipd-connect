@@ -1,6 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Mail, GraduationCap, Microscope, Layers, Hammer, Amphora, Dna, Computer, Atom, Dribbble } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import semImage from "@/assets/SEM.png";
+import researchImage from "@/assets/Students.png";
+import consultancyImage from "@/assets/consultancy.jpg";
+import collaborationImage from "@/assets/collaboration.jpg";
+import heroImage from "@/assets/hero-image.jpg";
+
 
 const Staff = () => {
 	const staffMembers = [
@@ -46,41 +50,38 @@ const Staff = () => {
 					</div>
 					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
 						{[
-							{ icon: Microscope, title: "Advanced Materials Characterization", gradient: "from-blue-500 to-cyan-500" },
-							{ icon: Dribbble, title: "Polymer Science & Engineering", gradient: "from-purple-500 to-pink-500" },
-							{ icon: Hammer, title: "Metallurgy & Metal Processing", gradient: "from-orange-500 to-red-500" },
-							{ icon: Amphora, title: "Ceramic Materials", gradient: "from-amber-500 to-yellow-500" },
-							{ icon: Layers, title: "Composite Materials", gradient: "from-green-500 to-emerald-500" },
-							{ icon: Dna, title: "Biomaterials & Bioengineering", gradient: "from-teal-500 to-cyan-500" },
-							{ icon: Atom, title: "Nanomaterials & Nanotechnology", gradient: "from-indigo-500 to-purple-500" },
+							{ title: "Advanced Materials Characterization", image: semImage },
+							{ title: "Polymer Science & Engineering", image: researchImage },
+							{ title: "Metallurgy & Metal Processing", image: consultancyImage },
+							{ title: "Ceramic Materials", image: collaborationImage },
+							{ title: "Composite Materials", image: heroImage },
+							{ title: "Biomaterials & Bioengineering", image: researchImage },
+							{ title: "Nanomaterials & Nanotechnology", image: semImage },
 							{
-								icon: Computer,
 								title: "Multiphysics Simulations and Finite Element Analysis",
-								gradient: "from-pink-500 to-rose-500",
+								image: consultancyImage,
 							},
-						].map((area, index) => {
-							const Icon = area.icon;
-							return (
-								<Card
-									key={index}
-									className="group relative overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-border bg-card/50 backdrop-blur"
-								>
-									<CardContent className="p-6 flex flex-col items-center text-center">
-										<div
-											className={`inline-flex p-3 rounded-lg bg-gradient-to-br ${area.gradient} mb-4 shadow-md group-hover:scale-110 transition-transform duration-300`}
-										>
-											<Icon className="h-6 w-6 text-white" />
-										</div>
-										<h4 className="font-semibold text-sm leading-snug group-hover:text-primary transition-colors">
+						].map((area, index) => (
+							<Card
+								key={index}
+								className="group relative overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
+							>
+								<CardContent className="p-0">
+									<div className="relative h-40 w-full overflow-hidden">
+										<img
+											src={area.image}
+											alt={area.title}
+											className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+										/>
+									</div>
+									<div className="px-6 pb-6 pt-4 text-center bg-gradient-to-t from-background/90 via-background/40 to-transparent">
+										<h4 className="font-semibold text-sm leading-snug text-foreground transition-colors group-hover:text-primary">
 											{area.title}
 										</h4>
-									</CardContent>
-									<div
-										className={`absolute inset-0 bg-gradient-to-br ${area.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
-									/>
-								</Card>
-							);
-						})}
+									</div>
+								</CardContent>
+							</Card>
+						))}
 					</div>
 				</div>
 			</div>
