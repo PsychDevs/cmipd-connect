@@ -89,8 +89,8 @@ const Contact = () => {
 									<Mail className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
 									<div>
 										<p className="font-medium">Email</p>
-										<a href="mailto:director-cmipd@uom.lk" className="text-sm text-primary hover:underline">
-											director-cmipd@uom.lk
+										<a href="mailto:head-materials@uom.lk" className="text-sm text-primary hover:underline">
+											head-materials@uom.lk
 										</a>
 									</div>
 								</div>

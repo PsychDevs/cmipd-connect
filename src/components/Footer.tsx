@@ -51,10 +51,10 @@ const Footer = () => {
 						<ul className="space-y-2 text-sm">
 							<li>
 								<a
-									href="mailto:director-cmipd@uom.lk"
+									href="mailto:head-materials@uom.lk"
 									className="text-muted-foreground hover:text-primary transition-smooth"
 								>
-									director-cmipd@uom.lk
+									head-materials@uom.lk
 								</a>
 							</li>
 							<li>
