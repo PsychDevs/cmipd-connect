@@ -4,6 +4,14 @@ import researchImage from "@/assets/Students.png";
 import consultancyImage from "@/assets/consultancy.jpg";
 import collaborationImage from "@/assets/collaboration.jpg";
 import heroImage from "@/assets/hero-image.jpg";
+import metallurgyImage from "@/assets/metallurgy.jpg";
+import polymerImage from "@/assets/plastic-pellets-colored.jpeg";
+import ceramicImage from "@/assets/ceramic.jpg" 
+import nanomaterialsImage from "@/assets/nanomaterials.jpg"
+import advancedMaterialsImage from "@/assets/advancedEquipment.png"
+import compositeMaterialsImage from "@/assets/composite.jpg"
+import biomaterialsImage from "@/assets/hipReplacement.jpg"
+import multiphysicsImage from "@/assets/FEA.jpeg"
 
 
 const Staff = () => {
@@ -50,21 +58,21 @@ const Staff = () => {
 					</div>
 					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
 						{[
-							{ title: "Advanced Materials Characterization", image: semImage },
-							{ title: "Polymer Science & Engineering", image: researchImage },
-							{ title: "Metallurgy & Metal Processing", image: consultancyImage },
-							{ title: "Ceramic Materials", image: collaborationImage },
-							{ title: "Composite Materials", image: heroImage },
-							{ title: "Biomaterials & Bioengineering", image: researchImage },
-							{ title: "Nanomaterials & Nanotechnology", image: semImage },
+							{ title: "Advanced Materials Characterization", image: advancedMaterialsImage },
+							{ title: "Polymer Science & Engineering", image: polymerImage },
+							{ title: "Metallurgy & Metal Processing", image: metallurgyImage },
+							{ title: "Ceramic Materials", image: ceramicImage },
+							{ title: "Composite Materials", image: compositeMaterialsImage },
+							{ title: "Biomaterials & Bioengineering", image: biomaterialsImage },
+							{ title: "Nanomaterials & Nanotechnology", image: nanomaterialsImage },
 							{
 								title: "Multiphysics Simulations and Finite Element Analysis",
-								image: consultancyImage,
+								image: multiphysicsImage,
 							},
 						].map((area, index) => (
 							<Card
 								key={index}
-								className="group relative overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
+								className="group relative overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur"
 							>
 								<CardContent className="p-0">
 									<div className="relative h-40 w-full overflow-hidden">
