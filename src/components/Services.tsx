@@ -1,7 +1,7 @@
 import { Microscope, BookOpen, Users, Zap } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import researchImage from "@/assets/Students.png";
-import consultancyImage from "@/assets/Consultancy.png";
+import consultancyImage from "@/assets/Consultancy_1.png";
 
 const Services = () => {
   const services = [

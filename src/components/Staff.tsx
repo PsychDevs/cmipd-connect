@@ -1,17 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
-import semImage from "@/assets/SEM.png";
-import researchImage from "@/assets/Students.png";
-import consultancyImage from "@/assets/consultancy.jpg";
-import collaborationImage from "@/assets/collaboration.jpg";
-import heroImage from "@/assets/hero-image.jpg";
 import metallurgyImage from "@/assets/metallurgy.jpg";
 import polymerImage from "@/assets/plastic-pellets-colored.jpeg";
-import ceramicImage from "@/assets/ceramic.jpg" 
-import nanomaterialsImage from "@/assets/nanomaterials.jpg"
-import advancedMaterialsImage from "@/assets/advancedEquipment.png"
-import compositeMaterialsImage from "@/assets/composite.jpg"
-import biomaterialsImage from "@/assets/hipReplacement.jpg"
-import multiphysicsImage from "@/assets/FEA.jpeg"
+import ceramicImage from "@/assets/ceramic.jpg";
+import nanomaterialsImage from "@/assets/nanomaterials.jpg";
+import advancedMaterialsImage from "@/assets/advancedEquipment.png";
+import compositeMaterialsImage from "@/assets/composite.jpg";
+import biomaterialsImage from "@/assets/hipReplacement.jpg";
+import multiphysicsImage from "@/assets/FEA.jpg";
 
 
 const Staff = () => {

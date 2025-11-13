@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react";
-import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselApi, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import collaborationImage from "@/assets/collaboration.jpg";
 import consultancyImage from "@/assets/Consultancy.png";
-import researchImage from "@/assets/Students.png";
-import discussionImage from "@/assets/discussion.png";
+import researchImage from "@/assets/Equipment_2.png";
 import metallurgyImage from "@/assets/metallurgyDisplay.png";
-import teachingImage from "@/assets/teaching.png";
 import equipmentImage from "@/assets/equipmentElectric.png";
-import microscopyImage from "@/assets/microscopeView.png";
+import studentsImage from "@/assets/Postgraduate.png";
+import microscopeImage from "@/assets/Equipment_3.png"
 import { cn } from "@/lib/utils";
 
 const slides = [
@@ -22,13 +19,17 @@ const slides = [
 		image: consultancyImage,
 	},
 	{
-		id: "product-development",
-		image: equipmentImage,
-	},
-	{
 		id: "domain-expertise",
 		image: metallurgyImage,
 	},
+	{
+		id: "students-support",
+		image: studentsImage,
+	},
+	{
+		id: "materials-characterization",
+		image: microscopeImage,
+	}
 ];
 
 const Hero = () => {
@@ -98,7 +99,7 @@ const Hero = () => {
 
 			<div className="container relative z-10 mx-auto px-6 py-28">
 				<div className="max-w-4xl space-y-10 animate-fade-in text-left">
-					<div className="relative pl-12">
+					<div className="relative">
 						<h1 className="text-4xl font-bold leading-tight text-foreground md:text-6xl lg:text-7xl">
 							<span className="block bg-gradient-to-r from-primary via-primary/80 to-secondary bg-clip-text text-transparent">
 								Center for Materials Innovation and Product Development
@@ -106,7 +107,7 @@ const Hero = () => {
 						</h1>
 					</div>
 
-					<p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
+					<p className="max-w-2xl text-lg text-black md:text-xl">
 						Bridging the gap between industry and academia through cutting-edge materials research, innovation, and expert
 						consultancy services.
 					</p>
