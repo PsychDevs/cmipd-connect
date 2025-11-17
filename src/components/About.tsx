@@ -6,22 +6,26 @@ const About = () => {
     {
       icon: Users,
       title: "Industry-Academia Collaboration",
-      description: "Strengthen partnerships between industry and academia to address real-world challenges",
+      description:
+        "Strengthen partnerships between industry and academia to address real-world challenges",
     },
     {
       icon: Target,
       title: "Student Development",
-      description: "Support academic development of undergraduate and postgraduate students with industry exposure",
+      description:
+        "Support academic development of undergraduate and postgraduate students with industry exposure",
     },
     {
       icon: Lightbulb,
       title: "Interdisciplinary Innovation",
-      description: "Foster collaboration across disciplines to drive materials innovation and research",
+      description:
+        "Foster collaboration across disciplines to drive materials innovation and research",
     },
     {
       icon: TrendingUp,
       title: "Economic Development",
-      description: "Contribute to national economic development through materials science solutions",
+      description:
+        "Contribute to national economic development through materials science solutions",
     },
   ];
 
@@ -41,8 +45,12 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="relative overflow-hidden py-28">
-      <div className="absolute inset-0 -z-10">
+    <section
+      id="about"
+      className="relative overflow-hidden py-28"
+      aria-labelledby="about-heading"
+    >
+      <div className="absolute inset-0 -z-10" aria-hidden="true">
         <div className="absolute -top-24 -right-20 h-64 w-64 rounded-full bg-primary/20 blur-3xl" />
         <div className="absolute top-1/3 -left-24 h-72 w-72 rounded-full bg-secondary/30 blur-3xl" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-muted/40" />
@@ -50,30 +58,39 @@ const About = () => {
 
       <div className="container relative mx-auto px-4">
         <div className="mx-auto max-w-4xl text-center">
-
-          <h2 className="mt-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-            Elevating Materials Innovation for Industry and Academia
+          <h2
+            id="about-heading"
+            className="mt-6 text-4xl font-bold tracking-tight text-foreground md:text-5xl"
+          >
+            Empowering Materials Innovation via Industry-Academia Collaborations
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            The Department of Materials Science and Engineering established CMIPD as a premium platform that connects
-            industrial ambition with academic excellence. We bridge the gap between critical market needs and emerging
-            research, empowering students, researchers, and partners to deliver transformative materials solutions.
+            The Department of Materials Science and Engineering established
+            CMIPD as a premium platform that connects industrial ambition with
+            academic excellence. We bridge the gap between critical market needs
+            and emerging research, empowering students, researchers, and
+            partners to deliver transformative materials solutions.
           </p>
         </div>
 
         <div className="mt-16 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div className="space-y-8 rounded-3xl border border-border/60 bg-card/70 p-10 shadow-2xl backdrop-blur-lg">
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-foreground md:text-3xl">Our Mission</h3>
+              <h3 className="text-2xl font-semibold text-foreground md:text-3xl">
+                Our Mission
+              </h3>
               <p className="text-base leading-relaxed text-muted-foreground">
-                CMIPD exists to remove the structural barriers that prevent industries from accessing specialized
-                materials science expertise. We facilitate agile collaboration, advanced infrastructure, and
-                coordinated communication to accelerate the delivery of impactful, real-world solutions.
+                CMIPD exists to remove the structural barriers that prevent
+                industries from accessing specialized materials science
+                expertise. We facilitate agile collaboration, advanced
+                infrastructure, and coordinated communication to accelerate the
+                delivery of impactful, real-world solutions.
               </p>
               <p className="text-base leading-relaxed text-muted-foreground">
-                By cultivating a connected ecosystem, we empower undergraduate and postgraduate students with
-                industry-aligned experience while enabling partners to unlock new capabilities in research, innovation,
-                and economic development.
+                By cultivating a connected ecosystem, we empower undergraduate
+                and postgraduate students with industry-aligned experience while
+                enabling partners to unlock new capabilities in research,
+                innovation, and economic development.
               </p>
             </div>
 
@@ -83,8 +100,12 @@ const About = () => {
                   key={index}
                   className="rounded-2xl border border-primary/20 bg-primary/10 px-5 py-6 text-left shadow-sm"
                 >
-                  <div className="text-3xl font-semibold text-primary">{stat.value}</div>
-                  <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
+                  <div className="text-3xl font-semibold text-primary">
+                    {stat.value}
+                  </div>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    {stat.label}
+                  </p>
                 </div>
               ))}
             </div>
@@ -96,9 +117,11 @@ const About = () => {
               <div className="overflow-hidden rounded-[26px]">
                 <img
                   src={collaborationImage}
-                  alt="Industry-Academia Collaboration"
+                  alt="Industry-academia collaboration at CMIPD - researchers and industry partners working together on materials innovation projects at University of Moratuwa"
                   className="h-full w-full object-cover"
                   loading="lazy"
+                  width="600"
+                  height="400"
                 />
               </div>
             </div>

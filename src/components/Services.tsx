@@ -1,39 +1,55 @@
 import { Microscope, BookOpen, Users, Zap } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import researchImage from "@/assets/Students.png";
-import consultancyImage from "@/assets/Consultancy_1.png";
+import consultancyImage from "@/assets/consultancy_services.png";
 
 const Services = () => {
   const services = [
     {
       icon: Microscope,
       title: "Materials Characterization",
-      description: "Advanced testing and analysis of material properties using state-of-the-art equipment",
+      description:
+        "State-of-the-art facilities for advanced material testing and analysis",
     },
     {
       icon: BookOpen,
       title: "Technical Consultation",
-      description: "Expert guidance on materials selection, processing, and application for your projects",
+      description:
+        "Expert guidance on materials selection, processing, and application for industry needs",
     },
     {
       icon: Users,
       title: "Training Programs",
-      description: "Specialized training for industry professionals on latest materials technologies",
+      description:
+        "Specialized training for industry professionals on latest materials technologies",
     },
     {
       icon: Zap,
       title: "Product Development",
-      description: "Collaborative product development from concept to prototype using innovative materials",
+      description:
+        "Product development starting from basic concepts to prototype through collaborative research",
     },
   ];
 
   return (
-    <section id="services" className="py-24">
+    <section id="services" className="py-24" aria-labelledby="services-heading">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+          <h2
+            id="services-heading"
+            className="text-3xl md:text-4xl font-bold mb-4"
+          >
+            Our Services
+          </h2>
           <p className="text-lg text-muted-foreground">
-            Comprehensive materials science and engineering solutions tailored to industry needs
+            Comprehensive materials science and engineering solutions tailored
+            to industry needs
           </p>
         </div>
 
@@ -42,8 +58,11 @@ const Services = () => {
             <div className="relative h-80">
               <img
                 src={consultancyImage}
-                alt="Consultancy Services"
+                alt="Materials science consultancy services - expert faculty providing technical guidance on materials selection, failure analysis, and process optimization for Sri Lankan industries"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                width="600"
+                height="320"
               />
             </div>
             <CardHeader>
@@ -54,25 +73,22 @@ const Services = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <p className="text-muted-foreground">
-                Our experienced faculty members provide specialized consultancy services to address 
-                complex materials science and engineering challenges faced by industries.
+                Our qualified faculty members provide specialized consultancy
+                services to address complex materials science and engineering
+                related challenges faced by the industries.
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>Materials selection and optimization</span>
+                  <span>Product Development and Optimizations</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>Failure analysis and troubleshooting</span>
+                  <span>Failure Analysis and Expert Solution</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>Process development and improvement</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2">•</span>
-                  <span>Quality control and assurance</span>
+                  <span>Quality Assuarance, Control, and Enhancement</span>
                 </li>
               </ul>
             </CardContent>
@@ -82,8 +98,11 @@ const Services = () => {
             <div className="relative h-80">
               <img
                 src={researchImage}
-                alt="Research & Development"
+                alt="Research and development facilities - postgraduate students and researchers using advanced materials characterization equipment and testing facilities at CMIPD laboratories"
                 className="w-full h-full object-cover"
+                loading="lazy"
+                width="600"
+                height="320"
               />
             </div>
             <CardHeader>
@@ -94,25 +113,26 @@ const Services = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               <p className="text-muted-foreground">
-                Access world-class research facilities and collaborate with our expert team to develop 
-                innovative materials solutions for your specific applications.
+                Access world-class research facilities and collaborate with our
+                expert team to develop innovative materials solutions for your
+                specific requirements.
               </p>
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>Novel materials development</span>
+                  <span>Collaborative Research</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>Advanced characterization techniques</span>
+                  <span>Novel Materials Development</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>Prototype testing and validation</span>
+                  <span>Advanced Materials Characterization</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2">•</span>
-                  <span>Collaborative research projects</span>
+                  <span>Prototype Testing and Validation</span>
                 </li>
               </ul>
             </CardContent>
@@ -123,7 +143,10 @@ const Services = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="text-center shadow-soft hover:shadow-medium transition-smooth border-border">
+              <Card
+                key={index}
+                className="text-center shadow-soft hover:shadow-medium transition-smooth border-border"
+              >
                 <CardHeader>
                   <div className="mx-auto bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-4">
                     <Icon className="h-8 w-8 text-primary" />
@@ -131,7 +154,9 @@ const Services = () => {
                   <CardTitle className="text-lg">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">{service.description}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {service.description}
+                  </p>
                 </CardContent>
               </Card>
             );
