@@ -95,21 +95,21 @@ const Hero = () => {
       className="relative flex min-h-screen items-center overflow-hidden bg-background"
       aria-labelledby="hero-heading"
     >
-      <div className="absolute inset-0" aria-hidden="true">
+      <div className="absolute inset-0 h-screen" aria-hidden="true">
         <Carousel
           className="h-full w-full pointer-events-none"
           opts={{ loop: true }}
           setApi={setCarouselApi}
           aria-label="Hero image carousel"
         >
-          <CarouselContent className="h-full">
+          <CarouselContent className="h-screen">
             {slides.map((slide) => (
-              <CarouselItem key={slide.id} className="h-full">
-                <div className="relative h-full w-full">
+              <CarouselItem key={slide.id} className="h-screen">
+                <div className="relative h-screen w-full">
                   <img
                     src={slide.image}
                     alt={slide.alt}
-                    className="h-full w-full object-cover"
+                    className="h-screen w-full object-cover"
                     loading="eager"
                   />
                 </div>
@@ -119,7 +119,7 @@ const Hero = () => {
         </Carousel>
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/50 md:from-background/95 md:via-background/60 md:to-transparent" />
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -left-28 h-72 w-72 rounded-full bg-primary/25 blur-3xl" />
         <div className="absolute top-1/2 right-[-60px] h-80 w-80 -translate-y-1/2 rounded-full bg-secondary/20 blur-3xl" />
@@ -127,7 +127,7 @@ const Hero = () => {
       </div>
 
       <div className="container relative z-10 mx-auto px-6 py-28">
-        <div className="max-w-4xl space-y-10 animate-fade-in text-left">
+        <div className="max-w-4xl space-y-10 animate-fade-in text-center md:text-left">
           <div className="relative">
             <h1
               id="hero-heading"
@@ -139,23 +139,23 @@ const Hero = () => {
             </h1>
           </div>
 
-          <p className="max-w-2xl text-lg text-black md:text-xl">
+          <p className="mx-auto max-w-2xl text-lg text-black md:mx-0 md:text-xl">
             Bridging the gap between industry and academia through expert
             consultancy, joint research and innovations.
           </p>
 
-          <div className="flex flex-col gap-4 pt-4 sm:flex-row">
+          <div className="flex flex-col items-center gap-4 pt-4 sm:flex-row md:items-start">
             <Button
               size="lg"
               onClick={scrollToContact}
-              className="group w-full sm:w-auto"
+              className="group w-auto px-8"
             >
               Request Consultation
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="w-full sm:w-auto"
+              className="w-auto px-8"
               onClick={() =>
                 document
                   .getElementById("about")
@@ -166,7 +166,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="flex items-center gap-2 pt-6">
+          <div className="flex items-center justify-center gap-2 pt-6 md:justify-start">
             {slides.map((_, index) => (
               <button
                 key={index}
