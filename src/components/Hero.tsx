@@ -162,7 +162,7 @@ const Hero = () => {
                   ?.scrollIntoView({ behavior: "smooth" })
               }
             >
-              Learn More
+              About CMIPD
             </Button>
           </div>
 
