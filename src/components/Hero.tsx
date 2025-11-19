@@ -128,6 +128,23 @@ const Hero = () => {
 
       <div className="container relative z-10 mx-auto px-6 py-28">
         <div className="max-w-4xl space-y-10 animate-fade-in text-center md:text-left">
+          <div className="flex items-center justify-center gap-2 pt-6 pl-2 md:justify-start">
+            {slides.map((_, index) => (
+              <button
+                key={index}
+                type="button"
+                className={cn(
+                  "h-2 rounded-full transition-all",
+                  index === currentSlide
+                    ? "w-6 bg-primary"
+                    : "w-2 bg-muted-foreground/50"
+                )}
+                aria-label={`Go to slide ${index + 1}`}
+                aria-current={index === currentSlide}
+                onClick={() => carouselApi?.scrollTo(index)}
+              />
+            ))}
+          </div>
           <div className="relative">
             <h1
               id="hero-heading"
@@ -164,24 +181,6 @@ const Hero = () => {
             >
               About CMIPD
             </Button>
-          </div>
-
-          <div className="flex items-center justify-center gap-2 pt-6 md:justify-start">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                type="button"
-                className={cn(
-                  "h-2 rounded-full transition-all",
-                  index === currentSlide
-                    ? "w-6 bg-primary"
-                    : "w-2 bg-muted-foreground/50"
-                )}
-                aria-label={`Go to slide ${index + 1}`}
-                aria-current={index === currentSlide}
-                onClick={() => carouselApi?.scrollTo(index)}
-              />
-            ))}
           </div>
         </div>
       </div>
