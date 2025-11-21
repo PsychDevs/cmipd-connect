@@ -1,5 +1,5 @@
 import { Target, Users, Lightbulb, TrendingUp } from "lucide-react";
-import collaborationImage from "@/assets/collaboration.jpg";
+import collaborationImage from "@/assets/collaboration.webp";
 
 const About = () => {
   const objectives = [
