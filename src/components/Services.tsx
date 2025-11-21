@@ -6,8 +6,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import researchImage from "@/assets/Students.png";
-import consultancyImage from "@/assets/consultancy_services.png";
+import researchImage from "@/assets/Students-min.png";
+import consultancyImage from "@/assets/consultancy_services-min.png";
 
 const Services = () => {
   const services = [
