@@ -6,12 +6,12 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import consultancyImage from "@/assets/hero-section/consultancy-min.png";
-import researchImage from "@/assets/hero-section/girl_microscope-min.png";
-import metallurgyImage from "@/assets/hero-section/microscopeView-min.png";
-import studentsImage from "@/assets/hero-section/Postgraduate-min.png";
-import teachingImage from "@/assets/hero-section/teaching-min.png";
-import SEMImage from "@/assets/hero-section/SEM-min.png";
+import consultancyImage from "@/assets/hero-section/consultancy-min.webp";
+import researchImage from "@/assets/hero-section/girl_microscope-min.webp";
+import metallurgyImage from "@/assets/hero-section/microscopeView-min.webp";
+import studentsImage from "@/assets/hero-section/Postgraduate-min.webp";
+import teachingImage from "@/assets/hero-section/teaching-min.webp";
+import SEMImage from "@/assets/hero-section/SEM-min.webp";
 import { cn } from "@/lib/utils";
 
 const slides = [

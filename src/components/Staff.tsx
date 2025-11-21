@@ -1,12 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
-import metallurgyImage from "@/assets/expertise_areas/metallurgy.jpg";
-import polymerImage from "@/assets/expertise_areas/plastic-pellets-colored.jpeg";
-import ceramicImage from "@/assets/expertise_areas/ceramic_materials.jpg";
-import nanomaterialsImage from "@/assets/expertise_areas/nanomaterials.jpg";
-import advancedMaterialsImage from "@/assets/expertise_areas/advanced_materials_characterization.png";
-import compositeMaterialsImage from "@/assets/expertise_areas/composite_materials.jpg";
-import biomaterialsImage from "@/assets/expertise_areas/Biomaterials_Bioengineering.jpg";
-import multiphysicsImage from "@/assets/expertise_areas/FEA.jpg";
+import metallurgyImage from "@/assets/expertise_areas/metallurgy.webp";
+import polymerImage from "@/assets/expertise_areas/plastic-pellets-colored.webp";
+import ceramicImage from "@/assets/expertise_areas/ceramic_materials.webp";
+import nanomaterialsImage from "@/assets/expertise_areas/nanomaterials.webp";
+import advancedMaterialsImage from "@/assets/expertise_areas/advanced_materials_characterization.webp";
+import compositeMaterialsImage from "@/assets/expertise_areas/composite_materials.webp";
+import biomaterialsImage from "@/assets/expertise_areas/Biomaterials_Bioengineering.webp";
+import multiphysicsImage from "@/assets/expertise_areas/FEA.webp";
 
 const Staff = () => {
   return (
