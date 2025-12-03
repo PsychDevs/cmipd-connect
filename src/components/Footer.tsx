@@ -87,7 +87,15 @@ const Footer = () => {
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
           <p>
             © {new Date().getFullYear()} Centre for Materials Innovation and
-            Product Development. All rights reserved.
+            Product Development | Developed by{" "}
+            <a
+              href="https://www.linkedin.com/in/lasith-dissanayake/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline hover:underline-offset-4"
+            >
+              Lasith
+            </a>
           </p>
         </div>
       </div>
