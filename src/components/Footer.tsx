@@ -3,18 +3,21 @@ import { ExternalLink } from "lucide-react";
 const Footer = () => {
   return (
     <footer
-      className="bg-muted/50 border-t border-border py-12"
+      className="bg-muted/50 border-t border-border py-12 md:px-10"
       role="contentinfo"
       aria-label="Site footer"
     >
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-[3fr_1fr_1fr] gap-16 mb-8">
           <div>
             <h3 className="font-semibold text-lg mb-4">About CMIPD</h3>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground line-spacing-">
               Centre for Materials Innovation and Product Development at the
               Department of Materials Science and Engineering, University of
-              Moratuwa.
+              Moratuwa. <br /> <br />
+              We provide expert consultancy, research collaboration, and
+              advanced materials characterization services to bridge academia
+              and industry.
             </p>
           </div>
 
